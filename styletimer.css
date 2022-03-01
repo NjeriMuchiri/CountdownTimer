@@ -56,3 +56,23 @@
     color:#333;
     margin-top:10px;
 }
+.deadline{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:1rem;
+    place-items: start;
+}
+.deadline-format{
+    padding:5px 10px;
+    background:#008b8b;
+}
+.deadline-format span{
+    color:#f5f5dc;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing:0.1em;
+}
+.deadline-format .days,.mins,.hours,.secs{
+    font-size: 30px;
+    color:#253529;
+}
