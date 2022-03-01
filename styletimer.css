@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Festive&family=Great+Vibes&family=Lobster&family=Redressed&family=Satisfy&family=ZCOOL+QingKe+HuangYou&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.section-center{
+    width:90vw;
+    max-width:1170px;
+    min-height:80vh;
+    margin:5rem auto;
+    padding:40px;
+    background:#f0fff0;
+}
+@media screen and ( min-width:992px ){
+    .section-center{
+        width:95vw;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:3rem;
+        place-items:center;
+    }
+    .discount{
+        display:flex;
+    }
+    .discount-info p {
+        margin: 2rem 0;
+    }
+}
+.discountfood-img img{
+    height:15rem;
+    display:block;
+    object-fit: cover;
+    margin:auto;
+    border-radius: 20px;
+    border:2px solid #b38b6d;
+}
+.discount-info h3{
+    font-size:18px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color:#00ced1;
+    font-family:'Comfortaa',cursive;
+    margin-top: 15px;
+}
+.discount{
+   color:cadetblue;
+   text-transform: capitalize;
+   letter-spacing:0.1rem;
+   margin-top:10px;
+   font-weight:400;
+}
+.discount-info p{
+    letter-spacing: 0.0567em;
+    max-width:25rem;
+    color:#333;
+    margin-top:10px;
+}
