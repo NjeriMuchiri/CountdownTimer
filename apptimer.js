@@ -28,7 +28,17 @@ const items = document.querySelectorAll('.deadline-format h4');
 
 
 let futureDate = new Date(2022, 2, 24, 21, 30, 0);
+console.log(futureDate);
 
 const year = futureDate.getFullYear();
+const hours = futureDate.getHours(); 
+const minutes = futureDate.getMinutes();
 
-discount.textContent = `Discount ends on ${year}`;
+let month = futureDate.getMonth();
+month = months[month];
+const date = futureDate.getDate();
+
+const weekday = weekdays[futureDate.getDay()];
+
+
+discount.textContent = `Discount ends on ${weekday} ${month} ${year} ${hours}: ${minutes}am`;
